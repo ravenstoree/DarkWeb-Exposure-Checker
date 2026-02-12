@@ -2,8 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Email Security Checker</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Exposure & Dark Web Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <script src="script.js"></script> </body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Dark Web Security Checker</h1>
+            <p>Check if your email address has been compromised in data breaches.</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="email" id="emailInput" placeholder="Enter your email address..." required>
+                <button onclick="checkEmail()">Scan Now</button>
+            </div>
+
+            <div id="loading" class="hidden">Scanning global databases...</div>
+            <div id="results" class="result-container"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Cybersecurity Student Project - KSU Community College</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
